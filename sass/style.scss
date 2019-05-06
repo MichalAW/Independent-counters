@@ -1,0 +1,12 @@
+$grey-color: #DCDCDC;
+
+body {
+    background-color: $grey-color;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}

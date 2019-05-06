@@ -1,0 +1,12 @@
+body {
+  background-color: #DCDCDC;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
