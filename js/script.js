@@ -6,6 +6,15 @@ var Counter = React.createClass({
             counter: 0
         };
     },
+    componentDidMount: function () {
+        console.log('Component Did Mount');
+    },
+    componentDidUpdate: function () {
+        console.debug('Component Did Update');
+    },
+    componentWillUnmount: function () {
+        console.debug('Component Will Umount');
+    },
     // Add one
     increment: function () {
         this.setState({
