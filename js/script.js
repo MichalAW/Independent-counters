@@ -6,14 +6,24 @@ var Counter = React.createClass({
             counter: 0
         };
     },
+
+    componentWillMount: function() {
+        console.log('component mounts on the DOM');
+    },
     componentDidMount: function () {
-        console.log('Component Did Mount');
+        console.log('this render method can be called we can access the DOM');
+    },
+    shouldComponentUpdate: function() {
+        console.log('should this component be updated or not?');
+    },
+    componentWillUpdate: function () {
+        console.log('before the re-rendering of the component takes place.');
     },
     componentDidUpdate: function () {
-        console.debug('Component Did Update');
+        console.log('receives arguments like prevState --> prevState was changed to current State.');
     },
     componentWillUnmount: function () {
-        console.debug('Component Will Umount');
+        console.log('the end of the component’s lifecycle.');
     },
     // Add one
     increment: function () {
